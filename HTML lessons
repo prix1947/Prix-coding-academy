@@ -1,0 +1,23 @@
+import { useState, useEffect } from 'react';
+import CodeEditor from '../../components/Editor';
+
+export default function HTMLCourse() {
+  const [lesson, setLesson] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/lessons/html/1')
+      .then(res => res.json())
+      .then(data => setLesson(data));
+  }, []);
+
+  return (
+    <div className="lesson-container">
+      {lesson && (
+        <>
+          <h1>{lesson.title}</h1>
+          <CodeEditor language="html" code={lesson.starterCode} />
+        </>
+      )}
+    </div>
+  );
+}
