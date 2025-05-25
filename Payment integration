@@ -1,0 +1,13 @@
+const stripe = require('stripe')(process.env.pk_test_51RSR7p08lZ52lk5lJCxo3It0VSB9yeo9YHyeCRyMe2JlxucaSC89jn91GSkdkNu7axbv72zcmcRXolsiekpLOui000uka8SBNs);
+
+exports.createPaymentIntent = async (req, res) => {
+  const { amount } = req.body;
+
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: amount * 100, // USD to cents
+    currency: 'usd',
+    payment_method_types: ['card']
+  });
+
+  res.json({ clientSecret: paymentIntent.client_secret });
+};
