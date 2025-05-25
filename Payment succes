@@ -1,0 +1,21 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+export default function PaymentSuccess() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate('/premium');
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
+  return (
+    <div className="success-page">
+      <h2>Payment Successful! 🎉</h2>
+      <p>Redirecting to premium content...</p>
+    </div>
+  );
+}
