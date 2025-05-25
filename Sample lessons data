@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "HTML Fundamentals",
+  "free": true,
+  "content": [
+    {
+      "type": "video",
+      "url": "https://youtu.be/example-html"
+    },
+    {
+      "type": "exercise",
+      "task": "Create a heading with your name",
+      "solution": "<h1>My Name</h1>"
+    }
+  ]
+}https://youtu.be/example-html
