@@ -1,0 +1,19 @@
+your-repo/
+├── backend/
+│   ├── api/                  # API routes
+│   │   ├── auth/             # Authentication controllers
+│   │   └── payments/         # Payment integration
+│   ├── config/               # MongoDB connection
+│   │   └── db.js             # Database config
+│   ├── Dockerfile            # Sandbox setup
+│   └── server.js             # Main entry point
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/       # Reusable UI
+│   │   ├── pages/            # Route components
+│   │   │   ├── Payments/     # Payment success page
+│   │   │   └── Lessons/      # HTML lessons
+│   │   ├── styles/           # CSS files
+│   │   └── App.js            # Main router
+└── README.md                 # Updated documentation
