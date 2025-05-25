@@ -1,0 +1,17 @@
+.lesson-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.code-editor {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.premium-banner {
+  background: gold;
+  padding: 1rem;
+  text-align: center;
+}
