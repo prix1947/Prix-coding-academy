@@ -1,0 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import HTMLCourse from './pages/Courses/HTML';
+import PremiumPage from './pages/Premium';
+
+function App() {
+  return (
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/learn/html" element={<HTMLCourse />} />
+          <Route path="/premium" element={<PremiumPage />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
+  );
+}
