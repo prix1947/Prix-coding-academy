@@ -1,6 +1,7 @@
 # Prix-coding-academy# SkillCraft - Freemium E-Learning Platform
 
-![SkillCraft Demo](demo.gif) *(Optional: Add a screenshot or GIF)*
+![SkillCraft Demo](demo.gif) 
+
 
 A full-stack platform for learning web development (HTML/CSS/JavaScript/Python) with free and premium tiers.
 
